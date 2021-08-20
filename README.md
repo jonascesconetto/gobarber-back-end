@@ -41,3 +41,7 @@ $ yarn dev:server
 
 # Well done, project is started!
 ```
+
+## Run with Insomnia
+
+[![Run in Insomnia}](https://insomnia.rest/images/run.svg)](https://insomnia.rest/run/?label=GoBarber%20API&uri=https%3A%2F%2Fraw.githubusercontent.com%2Fedjust%2Fgobarber-back-end%2Fmaster%2FInsomnia.json)
