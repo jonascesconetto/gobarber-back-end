@@ -6,6 +6,7 @@
 
 -   Node.js
 -   Yarn (recommended) or npm
+-   yarn add typeorm pg
 
 ### Clone the project and access folder
 
@@ -25,13 +26,17 @@ $ yarn
 $ cp .env.example .env
 
 # Create the instance of postgreSQL using docker
-$ docker run --name gostack_postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 -d postgres
+$ docker run -d postgres -e POSTGRES_PASSWORD=docker -p 5432:5432 --name gostack_postgres
 
 # Create the instance of mongoDB using docker
 $ docker run --name mongodb -p 27017:27017 -d -t mongo
 
 # Create the instance of redis using docker
 $ docker run --name redis -p 6379:6379 -d -t redis:alpine
+
+# Rodar comoando no SGBD
+$ CREATE EXTENSION IF NOT EXISTS "uuid-ossp"
+
 
 # Once the services are running, run the migrations
 $ yarn typeorm migration:run
